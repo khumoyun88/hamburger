@@ -173,11 +173,58 @@ main div button a{
 
     .hamburger{
         margin-left: 4rem;
-        display: flex;
+        display: block;
+        padding-top: 7px; 
+    }
+    .hamburger button{
+        border: none;
+        background-color:#F7F7F9;
     }
 }
 
 
+
+
+
+
+
+/* -------------dilog--------------- */
+dialog{
+    position: absolute;
+    top: 2rem;
+    left: auto;
+    right: 2rem;
+    width: 300px;
+    height: 100vh;
+    color: var(--mainColor);
+}
+
+dialog div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+dialog div button{
+    border:none;
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    border: 1px solid var(--mainColor);
+    border-radius: 10px;
+}
+
+dialog ul li{
+    list-style-type: none;
+    margin-left: 1rem;
+    margin-block: 1rem;
+    font-size: 2rem;
+    font-weight: 500
+}
+
+dialog ul li:hover{
+    text-decoration: underline;
+}
 
 
 
