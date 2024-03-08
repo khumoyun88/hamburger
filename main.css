@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+:root{
+    --mainColor:#1E255E;
+    --btnColor:#3C4EF3;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    max-width: 144rem;
+    background-color: #F7F7F9;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.btn{
+    width: 13rem;
+    height: 3.2rem;
+    border-radius: 10rem;
+    background-color: var(--mainColor);
+    border: none;
+}
+
+
+.wrapper{
+    width: 95%;
+}
+
+
+
+/* ------header------- */
+
+header{
+    max-width: 90%;
+    height: 4.2rem;
+    margin-block:3rem  6rem;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    margin-right: 2rem;
+}
+
+header > div {
+    width: 53rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+
+header button a{
+    color: #fff;
+}
+
+
+.hamburger{
+   display: none;
+}
+
+
+
+
+/* -------------main---------- */
+
+main{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main div h1{
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height:9.6rem ;
+    color:var(--mainColor);
+}
+
+main div p{
+    /* width: 40.3rem; */
+    height: 4.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: #1E255EB2;
+    margin-block: 1rem 5rem;
+}
+main div button{
+    width:20rem;
+    height:4.5rem;
+    border-radius: 10rem;
+    background-color: rgb(202, 206, 242);
+    box-shadow: inset;
+    border: none;
+    box-shadow: 4px 4px 8px gray;
+    margin: 1rem;
+    font-weight:600;
+}
+main div button a{
+    color: rgba(60, 78, 243, 1);
+}
+
+
+@media screen and (max-width: 1250px) {
+
+
+    .wrapper{
+        width: 100%;
+    }
+
+    header{
+        margin-inline: auto;
+    }
+    
+    main{
+        flex-direction: column;
+    }
+
+    main div{
+        text-align: center;
+    }
+
+    main img{
+        margin-top: 3rem;
+        width: 100%;
+        object-fit: fill;
+
+    }
+    
+
+}
+
+@media screen and (width < 750px){
+    html{
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (width < 625px){
+    html{
+        font-size: 8px;
+    }
+
+    header ul li{
+        display: none;
+    }
+
+
+    .hamburger{
+        margin-left: 4rem;
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
